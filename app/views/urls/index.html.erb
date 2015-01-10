@@ -1,0 +1,15 @@
+<h1>Listing all urls</h1>
+
+<table>
+  <tr>
+    <th>Original Url</th>
+    <th>Shortened Url</th>
+  </tr>
+ 
+  <% @urls.each do |url| %>
+    <tr>
+      <td><%= url.original_address %></td>
+      <td><%= url.shortened_url %></td>
+    </tr>
+  <% end %>
+</table>

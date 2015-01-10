@@ -1,15 +1,19 @@
 class UrlsController < ApplicationController
 
-
-	def new
-
+	def index
+		@urls = Url.all
 	end
 
-	def create
-		@url = Url.new(url_params)
+	def new
+	end
 
-		@url.save
-		redirect_to @url
+	
+	def create
+
+		 @url = Url.new(url_params)
+
+		 @url.save
+		 redirect_to @url
 	end
 
 	def show
@@ -18,7 +22,7 @@ class UrlsController < ApplicationController
 
 	private
 		def url_params
-			params.require(:url).permit(:original_url, :shortened_url)
+			params.require(:url).permit(:original_address, :shortened_url)
 		end
 
 end
