@@ -1,0 +1,14 @@
+<h1>Shorten your URL here</h1>
+
+<%= form_for :url, url: urls_path do |f| %>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </p>
+ 
+
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
