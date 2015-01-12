@@ -1,11 +1,11 @@
 
 <p>
   <strong>URL:</strong>
-  <%= @url.original_address %>
+  <a href="<%= @url.original_address %>"><%= @url.original_address %>"</a> 
 </p>
  
 <p>
   <strong>Shortened Url:</strong>
-  <%= @url.shortened_url %>
+   <a href="<%= @url.original_address%>"><%= @url.shortened_url %></a> 
 </p>
 

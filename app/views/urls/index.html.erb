@@ -1,15 +1,18 @@
 <h1>Listing all urls</h1>
 
-<table>
-  <tr>
-    <th>Original Url</th>
-    <th>Shortened Url</th>
-  </tr>
- 
-  <% @urls.each do |url| %>
-    <tr>
-      <td><%= url.original_address %></td>
-      <td><%= url.shortened_url %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="container">
+    ::before
+  <div class="header">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation" class="active"> <a href="#">Home</a></li>
+        <li role="presentation"><a href="#">About</a></li>
+        <li role="presentation"><a href="#">Contact</a></li>
+        ::after
+      </ul>
+    </nav>
+    <h3>Shorten all the Urls!!!</h3>
+
+
+  </div>
+</div>
