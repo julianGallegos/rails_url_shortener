@@ -9,9 +9,8 @@ class UrlsController < ApplicationController
 
 	
 	def create
-
 		 @url = Url.new(url_params)
-
+		 @url
 		 @url.save
 		 redirect_to @url
 	end
