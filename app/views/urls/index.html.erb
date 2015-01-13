@@ -1,18 +1,17 @@
-<h1>Listing all urls</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <h2 class="text-center">Shorten all the Urls!!!</h2>
+    
+    </div>
+    
+</div>
+
 
 <div class="container">
-    ::before
-  <div class="header"> 
-    <nav>
-      <ul class="nav nav-pills pull-right">
-        <li role="presentation" class="active"> <a href="#">Home</a></li>
-        <li role="presentation"><a href="#">About</a></li>
-        <li role="presentation"><a href="#">Contact</a></li>
-        ::after
-      </ul>
-    </nav>
-    <h3>Shorten all the Urls!!!</h3>
-
+  <div class="col-md-12">
+    <div class="text-center">
     <%= form_for :url, url: urls_path do |f| %>
   <p>
     <%= f.label :original_address %><br>
@@ -23,6 +22,16 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="col-md-12">
+    <div class="text-center">
 
   <h3>A list of all your URLs</h3>
   <p>
@@ -35,5 +44,6 @@
     </ul>
     <% end %>
 
+    </div>
   </div>
 </div>
