@@ -2,8 +2,10 @@
   <div class="row">
     <div class="col-md-12">
       
-      <h2 class="text-center">Shorten all the Urls!!!</h2>
-    
+      <h2 class="text-center">
+      <%= image_tag "58041639.jpg" %>
+      </h2>
+     
     </div>
     
 </div>
@@ -34,13 +36,12 @@
     <div class="text-center">
 
   <h3>A list of all your URLs</h3>
-  <p>
     <% @urls.each do |link| %>
-    <ul>
+    <ul class="text-center">
     
     <li><a href="<%link.original_address%>"> <%=link.original_address%></a></li>
       <li><a href="/<%=link.shortened_url%>"> <%=link.shortened_url%> </a>
-      </li>
+      </li><br>
     </ul>
     <% end %>
 
