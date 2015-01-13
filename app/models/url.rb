@@ -1,5 +1,6 @@
 class Url < ActiveRecord::Base
 	
+	belongs_to :user
 	before_save :add_short_url
 	
 	def add_short_url 

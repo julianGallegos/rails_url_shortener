@@ -13,6 +13,27 @@
     </nav>
     <h3>Shorten all the Urls!!!</h3>
 
+    <%= form_for :url, url: urls_path do |f| %>
+  <p>
+    <%= f.label :original_address %><br>
+    <%= f.text_field :original_address %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+  <h3>A list of all your URLs</h3>
+  <p>
+    <% @urls.each do |link| %>
+    <ul>
+    
+    <li><a href="<%link.original_address%>"> <%=link.original_address%></a></li>
+      <li><a href="/<%=link.shortened_url%>"> <%=link.shortened_url%> </a>
+      </li>
+    </ul>
+    <% end %>
 
   </div>
 </div>
